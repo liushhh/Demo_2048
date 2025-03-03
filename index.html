@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>2048</h1>
+        <div class="header">
+            <div class="score-container">
+                <div class="score-title">分数</div>
+                <div id="score">0</div>
+            </div>
+            <div class="best-container">
+                <div class="best-title">最高分</div>
+                <div id="best">0</div>
+            </div>
+            <button id="new-game">新游戏</button>
+        </div>
+        <div class="game-controls">
+            <button id="undo">撤销</button>
+            <div class="background-settings">
+                <input type="text" id="bg-url" placeholder="输入棋盘背景图片URL">
+                <button id="set-bg">设置背景</button>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+            </div>
+            <div class="tile-container"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
